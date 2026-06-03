@@ -63,7 +63,7 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 const NIETA_API = process.env.NIETA_API || 'https://api.talesofai.cn';
 const LLM_API_URL = process.env.LLM_API_URL || 'https://litellm.talesofai.cn/v1/chat/completions';
-const LLM_API_KEY = process.env.LLM_API_KEY || 'sk-fZrLXE0IEs6EDYCOsLLaQ';
+const LLM_API_KEY = process.env.LLM_API_KEY || 'YOUR_LLM_API_KEY_HERE';
 const DATA_DIR = path.join(__dirname, 'data');
 const TAGS_DIR = path.join(__dirname, '..', 'pages', 'dtags-test');
 
@@ -905,7 +905,7 @@ module.exports = {
       PORT: 3002,
       NIETA_API: 'https://api.talesofai.cn',
       LLM_API_URL: 'https://litellm.talesofai.cn/v1/chat/completions',
-      LLM_API_KEY: 'sk-fZrLXE0IEs6EDYJCOsLLaQ'
+      LLM_API_KEY: 'YOUR_LLM_API_KEY_HERE'
     },
     error_file: '/home/node/.pm2/logs/dtags-backend-error.log',
     out_file: '/home/node/.pm2/logs/dtags-backend-out.log',
